@@ -8,7 +8,7 @@ module.exports = async function(chunk, encoding, ...args) {
   const text = chunk.toString();
 
   // replace coincidences
-  const regex = new RegExp(search, 'gmi');
+  const regex = new RegExp(search, 'gm');
   const result = text.replace(regex, chalk.red(search));
 
   return result;
