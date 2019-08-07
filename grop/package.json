@@ -1,0 +1,16 @@
+{
+  "name": "grop",
+  "version": "1.0.0",
+  "main": "./bin/main.js",
+  "scripts": {
+    "build": "pkg bin/main.js --target latest --output dist/grop"
+  },
+  "bin": {
+    "grop": "./bin/main.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "pkg": "^4.4.0",
+    "through2": "^3.0.1"
+  }
+}
